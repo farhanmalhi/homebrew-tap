@@ -1,25 +1,25 @@
 class Hiruzen < Formula
   desc "Dropdown autocomplete for your terminal: suggests the next word as you type, on Windows, Linux and macOS"
-  homepage "https://www.hiruzen.farhanmalhi.com/"
-  version "0.1.0"
+  homepage "https://hiruzen.farhanmalhi.com/"
+  version "0.2.0"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/farhanmalhi/hiruzen-cli/releases/download/v0.1.0/hiruzen-cli-aarch64-apple-darwin.tar.xz"
-      sha256 "f8f1aa895a7e2e748247f4247dde766dd303d1a8af1ed7fd7d2ae815f12857ce"
+      url "https://github.com/farhanmalhi/hiruzen-cli/releases/download/v0.2.0/hiruzen-cli-aarch64-apple-darwin.tar.xz"
+      sha256 "23704d8e1bc0976d042e4535f193c7bfe983c04ce5367d44c80ed5273bd36313"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/farhanmalhi/hiruzen-cli/releases/download/v0.1.0/hiruzen-cli-x86_64-apple-darwin.tar.xz"
-      sha256 "b726c795f9a7f6310124c5da2874f82445326d191add69f9986548e40ec0cc01"
+      url "https://github.com/farhanmalhi/hiruzen-cli/releases/download/v0.2.0/hiruzen-cli-x86_64-apple-darwin.tar.xz"
+      sha256 "063379146d41dabf8e270f3867b14fc9aafa514bfcffbaf096a517cfbdc7474f"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/farhanmalhi/hiruzen-cli/releases/download/v0.1.0/hiruzen-cli-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "9577689a7658f3c016d30c8d84b2b7589002f64dd9e31cbc3e639ae5665208c5"
+      url "https://github.com/farhanmalhi/hiruzen-cli/releases/download/v0.2.0/hiruzen-cli-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "50334f7600cb87f4b1106c4e34a90604841f0b76452ca691195656905ffdd21c"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/farhanmalhi/hiruzen-cli/releases/download/v0.1.0/hiruzen-cli-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "b10c1478ed01f4d08ffc953cdeda77578ab64423b6eb8939767ecdf384e59da9"
+      url "https://github.com/farhanmalhi/hiruzen-cli/releases/download/v0.2.0/hiruzen-cli-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "918a410d9738be1555b6bb3df726b9b326ae882e498a6d703e5cf780a7e76a52"
     end
   end
   license "MIT"
