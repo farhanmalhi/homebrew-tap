@@ -1,25 +1,25 @@
 class Hiruzen < Formula
-  desc "Dropdown autocomplete for your terminal: suggests the next word as you type, on Windows, Linux and macOS"
+  desc "Your terminal assistant: suggests the next word as you type and learns how you work, on Windows, Linux and macOS"
   homepage "https://hiruzen.farhanmalhi.com/"
-  version "0.2.0"
+  version "0.2.1"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/farhanmalhi/hiruzen-cli/releases/download/v0.2.0/hiruzen-cli-aarch64-apple-darwin.tar.xz"
-      sha256 "23704d8e1bc0976d042e4535f193c7bfe983c04ce5367d44c80ed5273bd36313"
+      url "https://github.com/farhanmalhi/hiruzen-cli/releases/download/v0.2.1/hiruzen-cli-aarch64-apple-darwin.tar.xz"
+      sha256 "1f0b832743ba8fd331cfec316db28739738d945dc1594fb50f0b16c2785ccbe5"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/farhanmalhi/hiruzen-cli/releases/download/v0.2.0/hiruzen-cli-x86_64-apple-darwin.tar.xz"
-      sha256 "063379146d41dabf8e270f3867b14fc9aafa514bfcffbaf096a517cfbdc7474f"
+      url "https://github.com/farhanmalhi/hiruzen-cli/releases/download/v0.2.1/hiruzen-cli-x86_64-apple-darwin.tar.xz"
+      sha256 "73dc36896cce0a6a26443d5a3b1d52f2fedcdeb07efcba7d03edf8ebdebe3565"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/farhanmalhi/hiruzen-cli/releases/download/v0.2.0/hiruzen-cli-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "50334f7600cb87f4b1106c4e34a90604841f0b76452ca691195656905ffdd21c"
+      url "https://github.com/farhanmalhi/hiruzen-cli/releases/download/v0.2.1/hiruzen-cli-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "c0b90d384f5f2727a5a798a6bc6338d3baf3e7deb5072c9ad42517792ed20f41"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/farhanmalhi/hiruzen-cli/releases/download/v0.2.0/hiruzen-cli-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "918a410d9738be1555b6bb3df726b9b326ae882e498a6d703e5cf780a7e76a52"
+      url "https://github.com/farhanmalhi/hiruzen-cli/releases/download/v0.2.1/hiruzen-cli-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "9fd85de4984e01e3b89558352c18fb846602bd73823c9c2d025e9589a2b9795b"
     end
   end
   license "MIT"
