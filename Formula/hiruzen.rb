@@ -1,25 +1,25 @@
 class Hiruzen < Formula
   desc "Your terminal assistant: suggests the next word as you type and learns how you work, on Windows, Linux and macOS"
   homepage "https://hiruzen.farhanmalhi.com/"
-  version "0.2.1"
+  version "0.3.0"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/farhanmalhi/hiruzen-cli/releases/download/v0.2.1/hiruzen-cli-aarch64-apple-darwin.tar.xz"
-      sha256 "1f0b832743ba8fd331cfec316db28739738d945dc1594fb50f0b16c2785ccbe5"
+      url "https://github.com/farhanmalhi/hiruzen-cli/releases/download/v0.3.0/hiruzen-cli-aarch64-apple-darwin.tar.xz"
+      sha256 "c4f498caed7aab545e107683d3537f93f494e50cac653c4d430afa281d3e6c3e"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/farhanmalhi/hiruzen-cli/releases/download/v0.2.1/hiruzen-cli-x86_64-apple-darwin.tar.xz"
-      sha256 "73dc36896cce0a6a26443d5a3b1d52f2fedcdeb07efcba7d03edf8ebdebe3565"
+      url "https://github.com/farhanmalhi/hiruzen-cli/releases/download/v0.3.0/hiruzen-cli-x86_64-apple-darwin.tar.xz"
+      sha256 "7daad29437c1086e7266a80cec4507f21b03bb79e01a0bc7137947089f8eabaa"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/farhanmalhi/hiruzen-cli/releases/download/v0.2.1/hiruzen-cli-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "c0b90d384f5f2727a5a798a6bc6338d3baf3e7deb5072c9ad42517792ed20f41"
+      url "https://github.com/farhanmalhi/hiruzen-cli/releases/download/v0.3.0/hiruzen-cli-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "0ae30b58d752e24b4cc8fb56f6ad084b944e1ab6a01fc22458ce3ebeb66bc974"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/farhanmalhi/hiruzen-cli/releases/download/v0.2.1/hiruzen-cli-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "9fd85de4984e01e3b89558352c18fb846602bd73823c9c2d025e9589a2b9795b"
+      url "https://github.com/farhanmalhi/hiruzen-cli/releases/download/v0.3.0/hiruzen-cli-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "3749defc73063c84835c2a55c847f88fbfc9651b4b050b851b90e6e150117f14"
     end
   end
   license "MIT"
